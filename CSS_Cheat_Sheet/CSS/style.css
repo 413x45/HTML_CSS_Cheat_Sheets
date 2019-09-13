@@ -1,0 +1,212 @@
+/* this is applied to EVERYTHING '*' (zero everything out and reset by applying this: 
+* {
+    margin: 0;
+    padding: 0;
+}
+*/
+body {
+    background-color: #f4f4f4;
+    color: #5555;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    /* same as above, simplified */
+    font: normal 16px Arial, Helvetica, sans-serif;
+
+    line-height: 1.6em;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    color: blueviolet;
+}
+
+a:active {
+    color: violet;
+}
+
+a:visited {
+    
+}
+
+.container {
+    /* best to use % instead of px, responds correctly to size adjustment */
+    width: 80%;
+    margin: auto;
+}
+
+/* can type this to alter individual button like "submit": .my-form input[type="submit"] OR specify the class .button to apply to ALL buttons on page  */
+.button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+}
+
+.button:hover {
+    background: turquoise;
+    color: #fff;
+}
+
+.clr {
+    clear: both;
+}
+
+.box-1 {
+    background-color: #333;
+    color: #fff;
+
+    border-right: 5px red solid;
+    border-left: 5px red solid;
+    border-top: 5px red solid;
+    border-bottom: 5px red solid;
+    /* same as above, simplified */
+    border: 5px paleturquoise solid;
+
+    border-width: 3px;
+    border-bottom-width: 10px;
+    border-top-style: dotted;
+
+    /* can list seperate padding-top, padding-right... etc, or simplified if all the same: */
+    padding: 20px;
+
+    margin-top: 20px;
+    margin: 20px 0;
+}
+
+/* can specify certain block in class */
+.box-1 h1 {
+    font-family: Tahoma;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    word-spacing: 
+}
+
+.box-2 {
+    border: 3px dotted #ccc;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.categories {
+    border: 1px #ccc solid;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 15px;
+}
+
+.categories h2 {
+    text-align: center;
+}
+
+.categories ul {
+    padding: 5;
+    list-style: none;
+
+}
+
+.categories li {
+    padding-bottom: 6px;
+    border-bottom: dotted 1px #333;
+    list-style-image: url('../images/moon3star.png');
+
+}
+
+.my-form {
+    padding: 20px;
+}
+
+.my-form .form-group {
+    padding-bottom: 15px;
+}
+
+.my-form label {
+    display: block;
+}
+
+.my-form input[type="text"], .my-form textarea {
+    padding: 8px;
+    width: 100%;
+}
+
+/* make blocks float next to one another (columns) */
+.block {
+    float: left;
+    width: 33.3%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+
+#main-block {
+    float: left;
+    width: 70%;
+}
+
+#sidebar {
+    float: right;
+    width: 30%;
+    background-color: #ccc;
+    color: #fff;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.p-box {
+    width: 800px;
+    height: 500px;
+    border: 1px solid #000;
+    margin-top: 30px;
+    position: relative;
+    background-image: url('../images/meInTree.jpg');
+    background-repeat: no-repeat;
+    background-position: 50px 200px;
+    background-position: center center;
+
+}
+
+/* MOVE ELEMENTS AROUND - helpful for games ;) */
+.p-box h1 {
+    position: absolute;
+    top: 100px;
+    left: 200px;
+}
+
+.p-box h2 {
+    position: absolute;
+    top: 40px;
+    left: 100px;
+}
+
+/* stays exactly where you have it on the page, doesn't move with scrolling - something you want user to ALWAYS see, like heading/logo image/menu */
+.fix-me {
+    position: fixed;
+    top: 400px;
+}
+
+/* TARGETING SUEDO ELEMENTS */
+.my-list li:first-child {
+    background: paleturquoise;
+}
+
+.my-list li:last-child {
+    background: aliceblue;
+}
+
+.my-list li:nth-child(5) {
+    background: skyblue;
+}
+
+.my-list li:nth-child(even) {
+    background: cornflowerblue;
+}

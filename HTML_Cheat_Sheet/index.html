@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Cheat Sheet</title>
+  </head>
+
+  <body>
+    <!-- THIS IS HOW YOU LINK PAGES YOU CREATE -->
+    <a href="blog.html">Go to blog</a>
+
+    <!-- This is a comment for the developer -->
+    <h1>Hello World!</h1>
+    <!-- the "target="_blank" opens up the link in a new tab, so it doesn't override the current page. GOOD FOR ETERNAL LINKS-->
+    <h2>Let's go on a <a href="http://google.com" target="_blank">journey</a> together.</h2>
+
+    <h3>Down a path that leads beyond the horizon.</h3>
+    <h4>Over the hills and through the woods.</h4>
+    <h5>To the unknown wilderness with creatures big and small.</h5>
+    <h6>Are you up for the challenge?</h6>
+
+    <p>Blah blah blah. Write some engage stuff to entice your readers.</p>
+    <p>Understand now? Simple stuff. Easy peasy.</p>
+
+    <!-- unordered lists are usually the tab bars you see with style added for easy navigation-->
+    <ul>
+      <li>HOME</li>
+      <li>BLOG</li>
+      <li>DIY TUTORIALS</li>
+      <li>ABOUT ME</li>
+    </ul>
+
+    <ol>
+      <li>List Item 1</li>
+      <li>List Item 2</li>
+      <li>List Item 3</li>
+      <li>List Item 4</li>
+    </ol>
+
+    <!-- Table -->
+    <table>
+      <!-- Table Head -->
+      <thead>
+        <!-- Table Row -->
+        <tr>
+          <!-- Talbe Heading -->
+          <th>Name</th>
+          <th>Email</th>
+          <th>Age</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <!-- Table Data-->
+          <td>Alexas</td>
+          <td>thisisnotmyemail@gmail.com</td>
+          <td>33</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Break in Page -->
+    <br>
+
+    <!-- Horizonal Rule -->
+    <hr>
+
+    <br>
+
+    <!-- Forms action="" submits the form to certain page method="" POST, GET ..more advanced server side programming-->
+    <form action="process.php" method="POST">
+      <div>
+        <label>First Name</label>
+        <!-- use camel case: firstName - start with lower, then every word after starts with Uppercase -->
+        <input type="text" name="firstName">
+      </div>
+      <div>
+        <label>Last Name</label>
+        <input type="text" name="lastName">
+      </div>
+      <div>
+        <label>Email</label>
+        <input type="email" name="email">
+      </div>
+      <br>
+      <div>
+        <label>Message</label>
+        <textarea name="message" placeholder="write message here"></textarea>
+      </div>
+      <br>
+      <div>
+        <label>Gender</label>
+        <select name="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <br>
+      <div>
+        <label>Age:</label>
+        <input type="number" name="age" value="30">
+      </div>
+      <br>
+      <div>
+          <label>Birthday:</label>
+          <input type="date" name="birthday">
+        </div>
+        <br>
+        <input type="submit" name="submit" value="Submit">
+    </form>
+
+    <!-- Button current does nothing - in order to use, must use JavaScript and add an event, like 'click="someFunction"' -->
+    <button>Click Me</button>
+
+    <br>
+
+    <!-- Image -->
+    <a href="images/mouse.jpg">
+      <img src="images/mouse.jpg" atl="test image" width="200">
+    </a>
+
+    <!-- Quotations -->
+    <blockquote cite="http:traversymedia.com">
+      A bunch of words that you are quoting. Will have a bit of automatic styling added on into in block format. Adds some padding and pushes it towards the middle slightly. Can restyle by adding CSS.
+    </blockquote>
+
+    <!-- abbreviation tag, when hovered over 'WWW' will show what it stands for! -->
+    <p>The <abbr title="World Wide Web">WWW</abbr> is awesome</p>
+
+    <!-- cite tag wraps text in italic styling -->
+    <p><cite>HTML crash course</cite> by Brad Traversy</p>
+    <br>
+
+  </body>
+
+</html>
